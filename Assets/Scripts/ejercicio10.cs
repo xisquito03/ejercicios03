@@ -8,12 +8,16 @@ public class ejercicio10 : MonoBehaviour
 
     private void Update()
     {
-        Subida();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Subida();
+        }
     }
 
     private void Subida()
     {
-        transform.position = Vector3.one;
+        transform.localScale += Vector3.one;
+
 
     }
 }
